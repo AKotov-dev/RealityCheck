@@ -1,3 +1,6 @@
+RealityCheck - XTLS-Reality Masking Test
+---
+
 + Dependencies: openssl gtk2
 + Compilation: Lazarus-3.8 (x86_64)
 
@@ -25,4 +28,3 @@ Look at the `subject` and `issuer` blocks in the command output, which will show
 
 If the certificate matches the expected site, this confirms that the proxy is masking traffic correctly. The program does not require installation: download and unzip the [RealityCheck.tar.gz](https://github.com/AKotov-dev/RealityCheck/raw/refs/heads/main/RealityCheck.tar.gz) archive; run the `RealityCheck` file, enter the data and click the `Check` button.
 
-scrinshot
