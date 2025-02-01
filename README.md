@@ -1,6 +1,8 @@
 + Dependencies: openssl gtk2
 + Compilation: Lazarus-3.8 (x86_64)
 
+![](https://github.com/AKotov-dev/RealityCheck/blob/main/ScreenShot1.png)
+
 **RU**
 Программа позволяет узнать, работает ли маскировка `XTLS-Reality` на вашем прокси-сервере при подключении через него. В приложении используется инструкция:
 ```
