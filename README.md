@@ -30,3 +30,5 @@ Look in the command output for the `subject` and `issuer` blocks, which will sho
 
 If the certificate matches the expected site, this confirms that the proxy is masking traffic correctly. The program does not require installation: download and unzip the [RealityCheck.tar.gz](https://github.com/AKotov-dev/RealityCheck/raw/refs/heads/main/RealityCheck.tar.gz) archive; run the `RealityCheck` file, enter the data and click the `Check` button.
 
+---
+**Vive la résistance!**
