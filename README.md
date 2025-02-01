@@ -10,7 +10,7 @@ openssl s_client -showcerts -connect <proxy_server>:443 -servername <masked_doma
 <masked_domain> — это домен, под который прокси маскируется (например, yahoo.com).
 Посмотрите в выводе команды блок `subject` и `issuer`, который покажет, какой сертификат был выдан сервером. Вы должны увидеть сертификат для сайта yahoo.com или того, под который настроен прокси.
 
-Если сертификат соответствует ожидаемому сайту, это подтвердит, что прокси правильно маскирует трафик. Программа не требует установки: скачайте и распакуйте архив `RealityCheck.tar.gz`; запустите файл `RealityCheck`, введите данные и нажмите кнопку `Check`.
+Если сертификат соответствует ожидаемому сайту, это подтвердит, что прокси правильно маскирует трафик. Программа не требует установки: скачайте и распакуйте архив [RealityCheck.tar.gz](https://github.com/AKotov-dev/RealityCheck/raw/refs/heads/main/RealityCheck.tar.gz); запустите файл `RealityCheck`, введите данные и нажмите кнопку `Check`.
 
 **EN**
 The program allows you to find out whether `XTLS-Reality` masking works on your proxy server when connecting through it. The application uses the instruction:
