@@ -1,0 +1,199 @@
+object MainForm: TMainForm
+  Left = 288
+  Height = 499
+  Top = 124
+  Width = 742
+  ActiveControl = ProxyEdit
+  Caption = 'MainForm'
+  ClientHeight = 499
+  ClientWidth = 742
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnKeyUp = FormKeyUp
+  SessionProperties = 'Left;Top;MaskBox.Text;ProxyEdit.Text'
+  LCLVersion = '3.8.0.0'
+  object ListBox1: TListBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = StartBtn
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = StaticText1
+    Left = 0
+    Height = 424
+    Top = 55
+    Width = 742
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Top = 8
+    ItemHeight = 0
+    Style = lbOwnerDrawVariable
+    TabOrder = 3
+    TopIndex = -1
+    OnDrawItem = ListBox1DrawItem
+  end
+  object StartBtn: TSpeedButton
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 614
+    Height = 39
+    Top = 8
+    Width = 120
+    Anchors = [akTop, akRight]
+    BorderSpacing.Right = 8
+    Caption = 'Check'
+    Glyph.Data = {
+      36040000424D3604000000000000360000002800000010000000100000000100
+      2000000000000004000064000000640000000000000000000000000000000000
+      000000000000000000006AB7002B68B5008E69B500D368B400F368B400F369B5
+      00D368B4008D67B6002A00000000000000000000000000000000000000000000
+      000055AA000669B4009369B500FC69B500FF69B500FF69B500FF69B500FF69B5
+      00FF69B500FF69B500FC69B5009166CC000500000000000000000000000055AA
+      000668B400BC69B500FF69B500FF69B500FF69B500FF69B500FF69B500FF69B5
+      00FF69B500FF69B500FF69B500FF69B500BB66CC0005000000000000000069B4
+      009469B500FF69B500FF69B500FF69B500FF69B500FF69B500FF69B500FF69B5
+      00FF69B500FF69B500FF69B500FF69B500FF69B500910000000068B3002C69B5
+      00FC69B500FF69B500FF69B500FF69B500FFB4DA80FFB4DA80FF69B500FF69B5
+      00FF69B500FF69B500FF69B500FF69B500FF69B500FC67B6002A68B4009069B5
+      00FF69B500FF69B500FF69B500FFAFD877FFFFFFFFFFFFFFFFFFB4DA7FFF69B5
+      00FF69B500FF69B500FF69B500FF69B500FF69B500FF68B4008D69B400D569B5
+      00FF69B500FF69B500FFB4DA80FFFFFFFFFFFDFEFBFFFDFEFBFFFFFFFFFFB4DA
+      80FF69B500FF69B500FF69B500FF69B500FF69B500FF69B500D369B500F269B5
+      00FF69B500FF92C945FFFFFFFFFFFDFEFBFF9CCE57FF9CCE57FFFDFEFBFFFFFF
+      FFFFB4DA80FF69B500FF69B500FF69B500FF69B500FF68B400F168B400F369B5
+      00FF69B500FF69B500FFB8DC87FF9CCE57FF69B500FF69B500FF9CCE57FFFDFE
+      FBFFFFFFFFFFB4DA80FF69B500FF69B500FF69B500FF69B500F269B400D569B5
+      00FF69B500FF69B500FF69B500FF69B500FF69B500FF69B500FF69B500FF9BCE
+      55FFFDFEFBFFFFFFFFFFB4DA7FFF69B500FF69B500FF69B500D369B5009169B5
+      00FF69B500FF69B500FF69B500FF69B500FF69B500FF69B500FF69B500FF69B5
+      00FF9CCE57FFFDFEFBFFD5EAB7FF6BB604FF69B500FF68B5008E6BB5002D68B5
+      00FD69B500FF69B500FF69B500FF69B500FF69B500FF69B500FF69B500FF69B5
+      00FF69B500FF90C842FF6EB708FF69B500FF69B500FC6AB7002B0000000068B4
+      009769B500FF69B500FF69B500FF69B500FF69B500FF69B500FF69B500FF69B5
+      00FF69B500FF69B500FF69B500FF69B500FF69B4009300000000000000006DB6
+      000768B500BE69B500FF69B500FF69B500FF69B500FF69B500FF69B500FF69B5
+      00FF69B500FF69B500FF69B500FF69B400BD55AA000600000000000000000000
+      00006DB6000769B4009668B500FD69B500FF69B500FF69B500FF69B500FF69B5
+      00FF69B500FF69B500FC69B4009455AA00060000000000000000000000000000
+      000000000000000000006BB5002D69B5009168B400D468B400F468B400F468B4
+      00D468B4009068B3002C00000000000000000000000000000000
+    }
+    OnClick = StartBtnClick
+  end
+  object ProgressBar1: TProgressBar
+    AnchorSideTop.Control = StartBtn
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = StartBtn
+    Left = 512
+    Height = 10
+    Top = 22
+    Width = 94
+    Anchors = [akTop, akRight]
+    BorderSpacing.Right = 8
+    TabOrder = 2
+  end
+  object ProxyEdit: TEdit
+    AnchorSideLeft.Control = Label1
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = StartBtn
+    AnchorSideTop.Side = asrCenter
+    Left = 83
+    Height = 37
+    Hint = 'Your VPS - IP:Port'
+    Top = 9
+    Width = 185
+    BorderSpacing.Left = 4
+    BorderSpacing.Right = 15
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    AnchorSideTop.Control = StartBtn
+    AnchorSideTop.Side = asrCenter
+    Left = 8
+    Height = 17
+    Top = 19
+    Width = 71
+    Caption = 'VPS_IP:Port'
+  end
+  object StaticText1: TStaticText
+    Left = 0
+    Height = 20
+    Top = 479
+    Width = 742
+    Align = alBottom
+    Caption = 'License: GPLv3   Author: alex_q_2000 (C) 2025   URL: https://github.com/AKotov-dev'
+    Font.Color = clGray
+    Font.Height = -11
+    Font.Name = 'Sans'
+    ParentFont = False
+    TabOrder = 4
+  end
+  object Label2: TLabel
+    AnchorSideTop.Control = StartBtn
+    AnchorSideTop.Side = asrCenter
+    Left = 286
+    Height = 17
+    Top = 19
+    Width = 16
+    Anchors = [akTop]
+    Caption = '>>'
+  end
+  object MaskBox: TComboBox
+    AnchorSideTop.Control = StartBtn
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = ProgressBar1
+    Left = 319
+    Height = 37
+    Hint = 'Camouflage domain from Reality settings'
+    Top = 9
+    Width = 185
+    Anchors = [akTop, akRight]
+    BorderSpacing.Right = 8
+    ItemHeight = 0
+    ItemIndex = 3
+    Items.Strings = (
+      'google.com'
+      'ozon.ru'
+      'vk.com'
+      'yahoo.com'
+      'yandex.ru'
+    )
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 1
+    Text = 'yahoo.com'
+  end
+  object IniPropStorage1: TIniPropStorage
+    StoredValues = <>
+    Left = 56
+    Top = 88
+  end
+  object Timer1: TTimer
+    Enabled = False
+    OnTimer = Timer1Timer
+    Left = 160
+    Top = 88
+  end
+  object KillOpenSSL: TAsyncProcess
+    Active = False
+    Executable = 'bash'
+    Parameters.Strings = (
+      '-c'
+      'killall openssl'
+    )
+    Options = []
+    Priority = ppNormal
+    StartupOptions = []
+    ShowWindow = swoNone
+    WindowColumns = 0
+    WindowHeight = 0
+    WindowLeft = 0
+    WindowRows = 0
+    WindowTop = 0
+    WindowWidth = 0
+    FillAttribute = 0
+    Left = 264
+    Top = 88
+  end
+end
