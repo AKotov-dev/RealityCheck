@@ -6,8 +6,7 @@ RealityCheck - XTLS-Reality Masking Test
 
 ![](https://github.com/AKotov-dev/RealityCheck/blob/main/ScreenShot1.png)
 
-**RU**
-Программа позволяет узнать, работает ли маскировка `XTLS-Reality` на вашем прокси-сервере при подключении через него. В приложении используется команда:
+**[RU]** Программа позволяет узнать, работает ли маскировка `XTLS-Reality` на вашем прокси-сервере при подключении через него. В приложении используется команда:
 ```
 openssl s_client -showcerts -connect <proxy_server>:443 -servername <masked_domain>
 ```
@@ -20,8 +19,7 @@ openssl s_client -showcerts -connect <proxy_server>:443 -servername <masked_doma
 
 ---
 
-**EN**
-The program allows you to find out whether `XTLS-Reality` masking works on your proxy server when connecting through it. The application uses the command:
+**[EN]** The program allows you to find out whether `XTLS-Reality` masking works on your proxy server when connecting through it. The application uses the command:
 ```
 openssl s_client -showcerts -connect <proxy_server>:443 -servername <masked_domain>
 ```
