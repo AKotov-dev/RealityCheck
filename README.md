@@ -12,7 +12,7 @@ RealityCheck - XTLS-Reality Masking Test
 openssl s_client -showcerts -connect <proxy_server>:443 -servername <masked_domain>
 ```
 <proxy_server> — это IP-адрес или домен вашего прокси-сервера.  
-<masked_domain> — это домен, под который прокси маскируется (например, yahoo.com).
+<masked_domain> — это домен, под который прокси маскируется (например, `yahoo.com`).
 
 Посмотрите в выводе команды блоки `subject` и `issuer`, которые покажут, какой сертификат был выдан сервером. Вы должны увидеть сертификат для сайта `yahoo.com` или того, под который настроен прокси.
 
@@ -26,7 +26,7 @@ The program allows you to find out whether `XTLS-Reality` masking works on your 
 openssl s_client -showcerts -connect <proxy_server>:443 -servername <masked_domain>
 ```
 <proxy_server> is the IP address or domain of your proxy server.  
-<masked_domain> is the domain under which the proxy is masked (for example, yahoo.com).
+<masked_domain> is the domain under which the proxy is masked (for example, `yahoo.com`).
 
 Look in the command output for the `subject` and `issuer` blocks, which will show which certificate was issued by the server. You should see a certificate for `yahoo.com` or the one the proxy is configured for.
 
